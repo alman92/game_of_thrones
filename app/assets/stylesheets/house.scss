@@ -1,17 +1,33 @@
 // Place all the styles related to the House controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+  background-image: url("http://wallpapercraze.com/images/wallpapers/game_of_thrones_map_w1.jpeg");
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
 h2{
   text-align: center;
+  color: white;
 }
 
 .box{
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: white;
 }
 
 .house_img{
+  width: 100px;
+  height: 100%;
+}
+
+.character_img{
   width: 100px;
   height: 100%;
 }
@@ -20,8 +36,9 @@ h2{
   width: 50%;
   border: 3px solid black;
   text-align: center;
+  color: white;
 }
 
-.specs{
-
+.new{
+  color: white;
 }

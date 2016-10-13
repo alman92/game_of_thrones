@@ -16,7 +16,8 @@ class HousesController < ApplicationController
   end
 
   def create
-
+    @house = House.create(strong_params)
+    redirect_to house_path(@house)
   end
 
   def destroy
@@ -25,6 +26,6 @@ class HousesController < ApplicationController
   private
 
   def strong_params
-
+    params.require(:house).permit(:name, :img_url, :seat, :motto, :current_lord, :active)
   end
 end

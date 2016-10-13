@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "house#index"
+  root to: "houses#index"
 
   resources :houses do
     resources :characters

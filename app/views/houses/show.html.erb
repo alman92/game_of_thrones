@@ -1,0 +1,13 @@
+<h1>House <%= @house.name %></h1>
+
+<div class="box">
+<% @house.characters.each do |character|%>
+  <h2><%= character.name %></h2>
+    <%= image_tag character.img_url, class: "character_img" %>
+    <% if character.dead_alive %>
+    <p>Somehow, <%= character.name %> is still alive.....wonder for how long.
+      <% else %>
+    <p><%= character.name %> played the Game of Thrones..... and they died.</p>
+    <% end %>
+<% end %>
+</div>

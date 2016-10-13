@@ -1,0 +1,29 @@
+<div class="new">
+<h1>New House</h1>
+
+<%= form_for @house do |f| %>
+
+  <%= f.label "Name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label "Image URL" %>
+  <%= f.text_field :img_url %>
+
+  <%= f.label "Seat of Power" %>
+  <%= f.text_field :seat %>
+
+  <%= f.label "Motto" %>
+  <%= f.text_field :motto %>
+
+  <%= f.label "Lord in Power" %>
+  <%= f.text_field :current_lord %>
+
+  <%= f.label "Are they alive?" %>
+
+  Alive <%= f.radio_button :active, value: true %>
+  Dead <%= f.radio_button :active, value: false %>
+
+  <%= f.submit %>
+
+<% end %>
+</div>
