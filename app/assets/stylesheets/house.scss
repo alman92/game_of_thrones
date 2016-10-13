@@ -1,0 +1,27 @@
+// Place all the styles related to the House controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h2{
+  text-align: center;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.house_img{
+  width: 100px;
+  height: 100%;
+}
+
+.house{
+  width: 50%;
+  border: 3px solid black;
+  text-align: center;
+}
+
+.specs{
+
+}

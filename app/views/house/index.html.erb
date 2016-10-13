@@ -1,0 +1,22 @@
+<h2>The Houses of Westeros</h2>
+
+<div class="box">
+  <% @houses.each do |house| %>
+    <div class="house">
+      <p>House Name: <a href="<%= house_path(house) %>"><%= house.name %></a></p>
+      <br>
+      <%= image_tag house.img_url, class: "house_img" %>
+        <br>
+      <div class="specs">
+        <p>Seat of Power: <%= house.seat %></p>
+        <p>Motto: <%= house.motto %></p>
+        <p>Current Lord: <%= house.current_lord %></p>
+        <% if house.active %>
+          <p>This house has suffered greatly....but lives to fight another day.</p>
+            <% else %>
+          <p>This house is as dead as King Robert.</p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
